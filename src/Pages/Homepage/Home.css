@@ -1,0 +1,17 @@
+.background {
+  display: block;
+  padding-top: 30%;
+  padding-bottom: 45%;
+  background: #1f1f1f;
+}
+
+.mainText {
+  text-align: center;
+  font-size: 10rem;
+  color: #fff;
+  transition: all 0.2s ease-in;
+}
+
+.mainText:hover {
+  transform: scale(1.3);
+}

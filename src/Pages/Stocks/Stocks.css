@@ -1,0 +1,19 @@
+.MainStocks {
+  padding-top: 10%;
+  padding-bottom: 40%;
+  width: 100%;
+}
+
+.backgroundImage {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+}
+
+.calendarWidget {
+  width: 100%;
+  min-height: 50vh;
+}

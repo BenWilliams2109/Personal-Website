@@ -1,0 +1,105 @@
+.pageContent {
+  display: flex;
+}
+
+.horizontalFlexRight {
+  width: 50%;
+}
+
+.horizontalFlexLeft {
+  width: 40%;
+}
+
+.line1Right {
+  display: block;
+  position: relative;
+  left: 4%;
+  top: 7%;
+}
+
+.line2Right {
+  display: block;
+  position: relative;
+  left: 7.5%;
+  top: 8%;
+  padding: 2% 0 2% 0;
+}
+
+.line3Right {
+  display: block;
+  padding-top: 5%;
+  position: relative;
+  left: -7%;
+}
+
+.line1Left {
+  display: block;
+  position: relative;
+  width: 40%;
+  left: 60%;
+  top: 7%;
+}
+
+.line2Left {
+  display: block;
+  position: relative;
+}
+
+.pieCharts {
+  width: 22%;
+  display: inline-block;
+}
+
+.lineChart {
+}
+
+.fetchingData {
+  background: lightgray;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  /* Places content inside on top */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  font-size: 5rem;
+  opacity: 0.5;
+}
+
+.generalStatisticsColumn {
+  display: inline-block;
+}
+
+/* padding: top right bottom left;*/
+.generalStatisticsColumnItemGB {
+  background-color: #f9f9f9;
+  padding: 5px 20px 5px 10px;
+  border-style: solid;
+  border-width: 0.01rem;
+  border-color: lightslategray;
+}
+
+.generalStatisticsColumnItem {
+  padding: 5px 20vh 5px 10px;
+  border-style: solid;
+  border-width: 0.01rem;
+  border-color: lightslategray;
+}
+
+.statsBoxGB {
+  background-color: #f9f9f9;
+  padding: 5px 5px 5px 10px;
+  border-style: solid;
+  border-width: 0.01rem;
+  border-color: lightslategray;
+}
+
+.statsBox {
+  padding: 5px 5px 5px 10px;
+  border-style: solid;
+  border-width: 0.01rem;
+  border-color: lightslategray;
+}
