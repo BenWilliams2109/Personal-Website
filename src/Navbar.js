@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
+      <IconContext.Provider value={{ color: "#BB86FC", size: "4rem" }}>
         <nav className="navbar">
           <div className="navbar-container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
@@ -26,17 +26,17 @@ function Navbar() {
               <li className="nav-item">
                 <Link
                   to="/stocks"
-                  className="navBarButton"
+                  className="navbar-item-text"
                   onClick={closeMobileMenu}
                 >
-                  ECONOMIC CALENDAR
+                  Economic Calendar
                 </Link>
               </li>
 
               <li className="nav-item">
                 <Link
                   to="/forex"
-                  className="navBarButton"
+                  className="navbar-item-text"
                   onClick={closeMobileMenu}
                 >
                   Forex
