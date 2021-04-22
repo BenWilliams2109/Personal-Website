@@ -11,7 +11,3 @@
   color: #fff;
   transition: all 0.2s ease-in;
 }
-
-.mainText:hover {
-  transform: scale(1.3);
-}

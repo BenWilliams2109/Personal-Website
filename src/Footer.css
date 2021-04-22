@@ -6,16 +6,10 @@
   bottom: 0;
 }
 
-.footerContentBox {
-}
-
 .footerFirstLineRow {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
-}
-
-.footerInformation {
 }
 
 .footerInformationLine1 {
@@ -31,9 +25,6 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
   padding-bottom: 5rem;
-}
-
-.footerAbout {
 }
 
 .title {
@@ -52,18 +43,7 @@
   font-family: "maison-neue-mono", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-}
-
-.phoneNumber {
-}
-
-.email {
-}
-
-.address {
-}
-
-.socialMedia {
+  text-decoration: none;
 }
 
 .socials {
