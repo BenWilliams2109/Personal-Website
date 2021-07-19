@@ -112,11 +112,11 @@
 
   .menu-icon {
     display: flex;
-    position: fixed;
-    left: 90%;
-    top: 1.5%;
+    position: relative;
     justify-content: center;
     align-items: center;
+    padding-left: 70%;
+    top: 1.5%;
     padding-right: 40px;
     color: #ffff;
     z-index: 3;

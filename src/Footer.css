@@ -6,25 +6,18 @@
   bottom: 0;
 }
 
-.footerFirstLineRow {
+.footerInformation {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
+  grid-template-columns: 25% auto;
+  grid-template-rows: auto auto;
 }
 
 .footerInformationLine1 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-}
-
-.footerInformationLine2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  padding-bottom: 5rem;
+  grid-gap: 0.5rem;
 }
 
 .title {
@@ -41,11 +34,19 @@
   color: #fff;
   margin-left: 3rem;
   font-family: "maison-neue-mono", Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   text-decoration: none;
 }
 
-.socials {
+.phoneNumber {
+}
+
+.email {
+}
+
+.socialMedia {
   color: #fff;
+  text-decoration: none;
+  padding-bottom: 20px;
 }

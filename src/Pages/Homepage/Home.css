@@ -5,6 +5,10 @@
   background: #1f1f1f;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .mainText {
   text-align: center;
   font-size: 10rem;
