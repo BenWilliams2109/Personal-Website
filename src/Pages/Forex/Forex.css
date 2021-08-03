@@ -1,5 +1,6 @@
 .pageContent {
   display: flex;
+  background: #f5f5f5;
 }
 
 .horizontalFlexRight {
@@ -102,4 +103,30 @@
   border-style: solid;
   border-width: 0.01rem;
   border-color: lightslategray;
+}
+
+a.executeButton {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #242424;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #242424;
+  text-align: center;
+  transition: all 0.2s;
+}
+a.executeButton:hover {
+  color: #bb86fc;
+  border: 0.1em solid #bb86fc;
+  background-color: #242424;
+}
+@media all and (max-width: 30em) {
+   a.executeButton {
+    display: block;
+    margin: 0.4em auto;
+  }
 }

@@ -54,7 +54,7 @@ function Forex() {
 
   function fetchAlgorithmResults(input) {
     setFetched(false);
-    fetch("http://127.0.0.1:5000/choice", {
+    fetch("https://www.benslwilliams.co.uk:5000/choice", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -65,7 +65,7 @@ function Forex() {
       .then((data) => {
         setPositions(data);
         setFetched(true);
-        formatTradeLines();
+        formatTradeLines(data);
       });
   }
 
@@ -79,14 +79,14 @@ function Forex() {
         ) {
           if (positions[i].Type === "Short") {
             return (
-              <svg x={cx - 4} y={cy - 3} width={10} height={20} fill="red">
-                <polygon points={"0,0 0,6 4,3"} />
+              <svg x={cx - 8} y={cy - 6} width={10} height={20} fill="red">
+                <polygon points={"0,0 0,12 8,6"} />
               </svg>
             );
           } else {
             return (
-              <svg x={cx - 4} y={cy - 3} width={10} height={20} fill="blue">
-                <polygon points={"0,0 0,6 4,3"} />
+              <svg x={cx - 8} y={cy - 6} width={10} height={20} fill="blue">
+                <polygon points={"0,0 0,12 8,6"} />
               </svg>
             );
           }
@@ -96,14 +96,14 @@ function Forex() {
         ) {
           if (positions[i].Type === "Short") {
             return (
-              <svg x={cx} y={cy - 3} width={10} height={20} fill="red">
-                <polygon points={"0,3 4,0 4,6"} />
+              <svg x={cx} y={cy - 6} width={10} height={20} fill="red">
+                <polygon points={"0,6 8,0 8,12"} />
               </svg>
             );
           } else {
             return (
-              <svg x={cx} y={cy - 3} width={10} height={20} fill="blue">
-                <polygon points={"0,3 4,0 4,6"} />
+              <svg x={cx} y={cy - 6} width={10} height={20} fill="blue">
+                <polygon points={"0,6 8,0 8,12"} />
               </svg>
             );
           }
@@ -113,10 +113,11 @@ function Forex() {
     return null;
   };
 
-  const formatTradeLines = () => {
+  const formatTradeLines = (positions) => {
     let tempData = Array(positions.length)
       .fill(0)
       .map(() => new Array(2).fill(0));
+    console.log(tempData);
 
     for (var i = 0; i < positions.length; i++) {
       tempData[positions[i].uniqueTradeCode] = [
@@ -152,14 +153,14 @@ function Forex() {
           />
           <YAxis type="number" domain={["auto", "auto"]} />
           <Tooltip dataKey="DateTime" labelFormatter={tickFormatter} />
-          <Brush
+          {/* <Brush
             data={coordinatePairsOnGraph}
             dataKey="DateTime"
             tickFormatter={tickFormatter}
             autoScaleYaxis={true}
             height={40}
             travellerWidth={5}
-          />
+          /> */}
           <Line
             data={data}
             type="Monotone"
@@ -173,6 +174,7 @@ function Forex() {
             return (
               <Line
                 data={trade}
+                isAnimationActive={false}
                 type="linear"
                 stroke="red"
                 strokeDasharray="3 3"
@@ -210,9 +212,9 @@ function Forex() {
           </div>
           <div className="line2Left">
             <div className="runButton">
-              <button className="ui button" onClick={handleClick}>
+              <a class="executeButton" onClick={handleClick}>
                 Run
-              </button>
+              </a>
             </div>
           </div>
         </div>
